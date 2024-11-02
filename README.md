@@ -1,4 +1,4 @@
-# Quiz Roulette
+# Quiz Ace
 
 ### Objective
 To provide an easily accesible quiz app for everyone.
