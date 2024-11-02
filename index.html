@@ -1,0 +1,122 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kenneth Gonzales">
+    <meta name="description" content="Quiz Ace, an online website that provides accesible and engaging quiz">
+    <meta property="og:title" content="Quiz Ace | Free Online Quiz App" />
+    <meta property="og:url" content="https://kenthzy.github.io/Quiz-Ace/" />
+    <meta property="og:image" content="https://kenthzy.github.io/Quiz-Ace/assets/img/webpreview.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Quiz Ace, an online website that provides accesible and engaging quiz with leaderboards." />
+    <meta property="og:locale" content="en_GB" />
+    <meta name="keywords" content="quiz, online quiz, free quiz, free online quiz, quiz app, free quiz app, online quiz app, free online quiz app">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="assets/css/fontawesome.css" rel="stylesheet">
+    <link href="assets/css/solid.css" rel="stylesheet">
+    <link href="assets/css/brands.css" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" sizes="32x32 64x64" href="https://kenthzy.github.io/Quiz-Ace/assets/img/web-logo.svg">
+    <title>Quiz Ace | Free Online Quiz App</title>
+</head>
+
+<body>
+    <div class="body">
+        <header>
+            <div class="logo">
+                <p>Quiz <span>Ace</span></p>
+            </div>
+            <div class="nav-buttons">
+                <button id="toggle-theme-button"><i class="fa-solid fa-moon"></i></button>
+                <button id="quiz-game-button" class="active"><i class="fa-solid fa-pen"></i></button>
+                <button id="Instructions-button"><i class="fa-solid fa-book"></i></button>
+            </div>
+        </header>
+        <main>
+            <div class="quiz-settings">
+                <div class="difficulty-options">
+                    <button class="dropdown-button" id="difficulty-button">Difficulty <i class="fa-solid fa-chevron-down"></i></button>
+                    <div id="difficulty-options">
+                        <span topic-difficulty="easy">Easy</span>
+                        <span topic-difficulty="medium">Medium</span>
+                        <span topic-difficulty="hard">Hard</span>
+                    </div>
+                </div>
+                <div class="type-options">
+                    <button class="dropdown-button" id="type-button">Type <i class="fa-solid fa-chevron-down"></i></button>
+                    <div id="type-options">
+                        <span topic-type="multiple">Multiple Choice</span>
+                        <span topic-type="boolean">True or False</span>
+                    </div>
+                </div>
+                <input type="number" id="quiz-count" class="textbox-control" numeric value="10" placeholder="quantity">
+                <button class="button-control" id="start-quiz-button">Start</button>
+            </div>
+            <div class="quiz-home">
+                <p>Welcome to <span>Quiz</span> <span>Ace</span> To start, fill up the details above (or don't) and hit <span>start</span>.</p>
+            </div>
+            <div class="quiz-body" id="quiz-body">
+                <div class="quiz-heading">
+                    <div class="subject-title">
+                        <p><span id="subject"></span> - <span class="hard" id="subject-difficulty">Hard</span></p>
+                    </div>
+                    <div class="score">
+                        <p><span id="quiz-score">10</span> / <span id="quiz-total">10</span></p>
+                    </div>
+                </div>
+                <div class="question">
+                    <p id="quiz-question">1. What is the number of planets in the solar system?</p>
+                </div>
+                <div class="choices" id="quiz-choices">
+                    <button>A. True</button>
+                    <button>A. False</button>
+                    <button>A. True</button>
+                    <button>A. False</button>
+                </div>
+                <span class="loader"></span>
+            </div>
+            <div class="quiz-summary" id="quiz-summary">
+                <div class="summary-heading">
+                    <div class="summary-title">Difficulty: <span id="summary-subject-difficulty"></span></div>
+                    <div class="summary-score"><span id="summary-score"></span> / <span id="summary-total-question"></span></div>
+                </div>
+                <div class="summary-body">
+                    <div class="question-logs" id="question-logs">
+                    </div>
+                </div>
+                <div class="next-button-div">
+                    <button id="quiz-next-button" class="button-control">Next</button>
+                </div>
+            </div>
+        </main>
+        <div class="contacts focusable">
+            <a href="https://www.facebook.com/kenthgnzls" target="_blank">
+                <div class="links">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <p>Facebook</p>
+                </div>
+            </a>
+            <a href="https://www.linkedin.com/in/kenthzy/" target="_blank">
+                <div class="links"><i class="fa-brands fa-linkedin-in"></i>
+                    <p>LinkedIn</p>
+                </div>
+            </a>
+            <a href="https://github.com/kenthzy" target="_blank">
+                <div class="links"><i class="fa-brands fa-github"></i>
+                    <p>Github</p>
+                </div>
+            </a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kenthgnzls@gmail.com" target="_blank">
+                <div class="links"><i class="fa-solid fa-envelope"></i>
+                    <p>Gmail</p>
+                </div>
+            </a>
+        </div>
+        <footer class="focusable">
+            <p>created by kenneth gonzales</p>
+        </footer>
+        <script src="js/index.js" type="module"></script>
+    </div>
+</body>
+
+</html>
